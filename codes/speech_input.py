@@ -13,27 +13,40 @@ class input(object):
 		self.ip.setformat(al.PCM_FORMAT_S16_LE)
 
 		self.ip.setperiodsize(160)
-		return self.ip.read()
+		
+		
+		while True:
+			inp = self.ip
+			l,data = inp.read()
+			
+			if l:
+				sig = str(audioop.max(data,2))
+				
+				return sig
+			time.sleep(.01)
+			
 
-	def save_sound(self,filename='test1'):
+	'''def save_sound(self,filename='test1'):
 		i=0
 		file_name = filename+'.txt'
-		print file_name
 		while True:
-			self.fil = open(file_name,'a')
+			self.fil = open(file_name,'w')
 			inp = self.ip
-			self.l,self.data = inp.read()
+			
 			if self.l :
 				value = str(audioop.max(self.data,2))
 				valu = str(i) + ','
 				val = valu + value
 				va = val + '\n'
-				self.fil.write(va)
-				print va
+				self.fil.write(value)
+				
 				time.sleep(.001)	
 				i += 1
+				return value
+'''
 
 if __name__ == '__main__':
 	obj = input()
-	obj.get_sound()
-	obj.save_sound(filename='test')
+	a = obj.get_sound()
+	print a
+	#obj.save_sound()
