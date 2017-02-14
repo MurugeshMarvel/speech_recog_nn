@@ -4,24 +4,36 @@ import audioop
 import matplotlib.pyplot as plt
 
 
-ip = al.PCM(al.PCM_CAPTURE,al.PCM_NONBLOCK)
 
-ip.setchannels(1)
-ip.setrate(8000)
-ip.setformat(al.PCM_FORMAT_S16_LE)
+class input(object):
+	def get_sound(self):
+		self.ip = al.PCM(al.PCM_CAPTURE,al.PCM_NONBLOCK)
+		self.ip.setchannels(1)
+		self.ip.setrate(8000)
+		self.ip.setformat(al.PCM_FORMAT_S16_LE)
 
-ip.setperiodsize(160)
+		self.ip.setperiodsize(160)
+		return self.ip.read()
 
-i=0
-while True:
-	fil = open("sound_signal.txt",'a')
-	l,data = ip.read()
-	if l :
-		value = str(audioop.max(data,2))
-		valu = str(i) + ','
-		val = valu + value
-		va = val + '\n'
-		fil.write(va)
-		print va
-	time.sleep(.001)	
-	i += 1
+	def save_sound(self,filename='test1'):
+		i=0
+		file_name = filename+'.txt'
+		print file_name
+		while True:
+			self.fil = open(file_name,'a')
+			inp = self.ip
+			self.l,self.data = inp.read()
+			if self.l :
+				value = str(audioop.max(self.data,2))
+				valu = str(i) + ','
+				val = valu + value
+				va = val + '\n'
+				self.fil.write(va)
+				print va
+				time.sleep(.001)	
+				i += 1
+
+if __name__ == '__main__':
+	obj = input()
+	obj.get_sound()
+	obj.save_sound(filename='test')
