@@ -26,24 +26,20 @@ class input(object):
 			time.sleep(.01)
 			
 
-	'''def save_sound(self,filename='test1'):
-		i=0
-		file_name = filename+'.txt'
-		while True:
-			self.fil = open(file_name,'w')
-			inp = self.ip
-			
-			if self.l :
-				value = str(audioop.max(self.data,2))
-				valu = str(i) + ','
-				val = valu + value
-				va = val + '\n'
-				self.fil.write(value)
-				
-				time.sleep(.001)	
-				i += 1
-				return value
-'''
+	def save_sound(self,filename,value,frame):
+		file_name = filename + ".txt"
+		file = open(file_name,'w')
+		self.initial_value = value
+		self.initial_frame = frame
+		file.write("#################################")
+		file.write("\n The Value is ")
+		file.write(value)
+		file.write("\n The frames are")
+		file.write(frame)
+		file.write("END")
+		file.close()
+		print "values saved in file",file_name
+
 
 if __name__ == '__main__':
 	obj = input()

@@ -63,3 +63,6 @@ print frame_value
 print np.shape(frame_value)
 
 print "The number of frames = ",no_of_frames
+value = str(value)
+frame_value = str(frame_value)
+inp.save_sound(filename="lpc1",value=value,frame=frame_value)
