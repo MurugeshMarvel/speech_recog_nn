@@ -2,6 +2,7 @@ import soundfile as sf
 import scipy.signal as scisig
 import numpy as np
 import matplotlib.pyplot as plt
+import lpc
 data, fs = sf.read("speech2.wav")
 
 data_len =  len(data)

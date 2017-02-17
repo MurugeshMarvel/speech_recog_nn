@@ -51,7 +51,31 @@ class lpc(object):
 					src_decode = np.zeros(new_window_decode_2,1)
 					step = round(1/pitch_frequency[i])
 					pts = range((offset+1),new_window_decode_2,step)
-					if 
+					if pts:
+						pts_len = len(pts)
+						offset = step + pts[pts_len] - new_window_decode_2
+						src_decode[pts] = np.sqrt(step)
+
+				else:
+					src_decode = np.random.random(new_window_decode_2)
+					offset = 0
+				#filter
+				decode_op = ##have to  solve the correct array structure in octave
+		else:
+			for i in range(0:n_decode):
+				decode_op = ##have to solve the correct array structure in octave
+				decode_op = pressStack(decode_op)
+
+		if lowcut > 0 :
+			b,a = butter(10,lowcut, 'high')#have to compute this
+			decode_op = filter(b,a,decode_op)#have to compute this
+
+		
+
+
+		return decode_op
+
+
 
 
 
