@@ -1,6 +1,7 @@
 import speech_input as si
 import numpy as np
 from audiolazy import lpc
+import matplotlib.pyplot as plt
 
 #initialise the input parameter by calling the speech_input parameters
 
@@ -91,5 +92,10 @@ if __name__ == '__main__':
 	inp = frame_object.get_input()
 	frame_object.frame_segment(frame_size=30)
 	lpc_value = frame_object.lpc1(inp,300)
-	print "the length of the lpc value is ", len(lpc_value)
-	print "the length of the origin value is ",len(inp)
+	file1 = open("lpc_vales.txt",'w')
+	file1.write(str(lpc_value))
+	fig = lpc_value.plot(plt.figure())
+	plt.show()
+	
+	
+	
