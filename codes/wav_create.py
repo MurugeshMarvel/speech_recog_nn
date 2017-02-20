@@ -6,7 +6,7 @@ import pyaudio
 import wave
 
 
-threshold = 500
+threshold = 8000
 chunk_size = 1024
 form = pyaudio.paInt16
 rate = 44100
@@ -86,7 +86,7 @@ def record():
 	stream.close()
 	aud.terminate()
 
-	r = normalize(r)
+	r = normalise(r)
 	r = trim(r)
 	r = add_silence(r,0.5)
 	return sample_width,r
@@ -97,7 +97,7 @@ def record_to_file(path):
 
 	wf = wave.open(path, 'wb')
 	wf.setnchannels(1)
-	wf.setsamplewidth(sample_width)
+	wf.setsampwidth(sample_width)
 	wf.setframerate(rate)
 	wf.writeframes(data)
 	wf.close()
