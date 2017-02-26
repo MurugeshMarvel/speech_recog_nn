@@ -33,5 +33,15 @@ class gmmhmm:
 		T = B.shape()
 		beta = np.zeros(B.shape)
 		beta[:, -1] = np.ones(B.shape[0])
-		for t in range(T):
-			beta[:, t] = np.dot(self.A, (B[:,t+1]))
+		for t in range(T - 1)[::-1]:
+			beta[:, t] = np.dot(self.A, (B[:,t+1] * beta[:,t +1]))
+			beta[:,t] /= np.sum(beta[:,t])
+
+		return beta
+
+	def _stata_likelihood(self,obs):
+		obs = np.atleast_2d(obs)
+		B = np.zeros((self.n_states,obs.shape[1]))
+		for s in range(self.n_states):
+			np.random.seed(self.random_state.randint(1))
+			B[s,:] = st.multivariate_normal.pdf(obs)
