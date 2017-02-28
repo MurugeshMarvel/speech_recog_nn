@@ -1,4 +1,3 @@
-My final Year projects working codes and datasets 
-
+This is the prototype project for Bilingual Speech recognition
 The procedural flow of the project
 
