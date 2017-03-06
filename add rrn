@@ -1,0 +1,145 @@
+[33mcommit 9623da08ad59869096b657d82ff8d79760325f05[m
+Author: MurugeshMarvel <murugeshmarvel95@zoho.com>
+Date:   Tue Feb 28 12:42:48 2017 +0530
+
+    updated readme
+
+[33mcommit 385f50900cda10a1d510af47255b278aa70ab364[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Sun Feb 26 14:47:18 2017 +0530
+
+    added RNN sample
+
+[33mcommit 8bc8e4a33cde98b8b046079dc880683f6c2262e1[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Fri Feb 24 23:10:59 2017 +0530
+
+    added gmmhmm
+
+[33mcommit 82c12f98fe130e9e9c696262810add606a64fd39[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Fri Feb 24 17:10:17 2017 +0530
+
+    Added necessary hmm files
+
+[33mcommit 67080933ae1ba916dea79441542324b6d1f61b4a[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Mon Feb 20 19:56:16 2017 +0530
+
+    A Updated
+
+[33mcommit 41d31f67341d53e088f68c8b0b38b2d47105f18b[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Sat Feb 18 18:11:55 2017 +0530
+
+    added wav file creation for producing training datasets
+
+[33mcommit 76c720f70d2e483cc18aedeea369d13241c2042d[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Sat Feb 18 11:20:39 2017 +0530
+
+    finalising LPC
+
+[33mcommit d7e2bdcfa0275d4861cae4255fad60e0a0edaea0[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Fri Feb 17 15:00:31 2017 +0530
+
+    added lpc_main function
+
+[33mcommit 8d0b0a93cf1dfacaaecc59e8838c2129dbe28222[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Fri Feb 17 13:37:45 2017 +0530
+
+    updated lpc libs
+
+[33mcommit df09d3d7211f9478529900a5408d5fc2d2386d7e[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Thu Feb 16 21:33:06 2017 +0530
+
+    added some reference sample code for RNN
+
+[33mcommit 297362205c25c8188d736f644eb82954807d28e6[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Thu Feb 16 21:03:29 2017 +0530
+
+    added matlab codes
+
+[33mcommit 53590f4f7d9dd780b603462a8703723750b355c2[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Thu Feb 16 18:24:00 2017 +0530
+
+    added lpc decode method in lpc_main
+
+[33mcommit 73b4436ab93f93b6352c75621513b42dce8ea1be[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Thu Feb 16 16:21:24 2017 +0530
+
+    Working in LPC encoding
+
+[33mcommit 910d92fe221168c42b1631a1cc2de4f2da3c4928[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Thu Feb 16 13:47:28 2017 +0530
+
+    started modeling lpc filter based on the equation
+
+[33mcommit 62abe16476af3a70fbddae76f49655ea29af8041[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Wed Feb 15 18:40:17 2017 +0530
+
+    changed the lpc cpes to frames segment codes and made them as a package
+
+[33mcommit b69930ecd94ad36d979608170efaffa3c41200d5[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Wed Feb 15 11:32:24 2017 +0530
+
+    updated the frames segmentation
+
+[33mcommit 7560e493950cedec031cbbfc61a85772b82cd012[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Wed Feb 15 10:30:34 2017 +0530
+
+    separated frames in the sound
+
+[33mcommit 021edec7aa641ff8d9cd8b53b70144bb8b0b8a6d[m
+Merge: f51dca5 430dc30
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Tue Feb 14 15:12:44 2017 +0530
+
+    Started working in LPC
+    Merge branch 'master' of https://github.com/MurugeshMarvel/speech_recog_nn
+
+[33mcommit f51dca5d5f79de4ce4f0c7d416cf4a257ad698e2[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Tue Feb 14 15:07:13 2017 +0530
+
+    started modelling LPC
+
+[33mcommit 430dc30e30cdc9aedcf45a6317123a735611a3de[m
+Author: MurugeshMarvel <murugeshmarvel95@zoho.com>
+Date:   Tue Feb 14 11:14:17 2017 +0530
+
+    Set theme jekyll-theme-time-machine
+
+[33mcommit 51242371aa1a118347e6169c62517d9ec4f54cae[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Tue Feb 14 11:10:18 2017 +0530
+
+    made speech_input as a package
+
+[33mcommit f5dd159b7cdd8f6a5ab2421a23734e8b90f84524[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Tue Feb 14 10:42:30 2017 +0530
+
+    added the workflow diagram
+
+[33mcommit 1d97bbb6f1b77d32241f1df5e31b66d6eb315d2c[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Tue Feb 14 10:33:50 2017 +0530
+
+    added the input interface for sound signal
+
+[33mcommit efa500866f0eb34a4416d0afd2f2511159329f46[m
+Author: MurugesMarvel <murugeshmarvel95@zoho.com>
+Date:   Tue Feb 14 10:16:26 2017 +0530
+
+    added Readme file
